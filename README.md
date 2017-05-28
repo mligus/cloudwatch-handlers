@@ -102,3 +102,8 @@ $ aws ec2 describe-instances
 ```
 
 All your AWS configuration is stored in `~/.aws/config` and `~/.aws/credentials` on Vagrant box.
+
+
+### Tools
+
+1. [isort](https://pypi.python.org/pypi/isort) to sort Python imports automatically.

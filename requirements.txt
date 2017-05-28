@@ -5,6 +5,7 @@ colorama==0.3.7
 coverage==4.4.1
 docutils==0.13.1
 flake8==3.3.0
+isort==4.2.5
 jmespath==0.9.3
 mccabe==0.6.1
 py==1.4.33
