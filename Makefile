@@ -25,6 +25,9 @@ lint:
 test: clean
 	py.test tests
 
+freeze:
+	pip freeze | grep -v "pkg-resources" > requirements.txt
+
 wheel: clean
 	python setup.py bdist_wheel
 
@@ -39,5 +42,7 @@ help:
 	@echo "        Run unit tests"
 	@echo "    wheel"
 	@echo "        Make wheel package"
+	@echo "    freeze"
+	@echo "        Freeze pip requirements into requirements.txt file"
 
 .PHONY: clean init lint test wheel
