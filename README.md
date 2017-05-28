@@ -47,7 +47,7 @@ By default [ubuntu/xenial64](https://atlas.hashicorp.com/ubuntu/boxes/xenial64/)
 To start and provision the run:
 
 ```
-vagrant up
+$ vagrant up
 ```
 
 Provision includes required Ubuntu packages installation (Python 3.6, etc.) and will set up 
@@ -60,5 +60,45 @@ File `requirements-to-freeze.txt` contains initial library requirements without 
 To install development requirements you may use 
 
 ```
-pip install -r requirements.txt
+$ pip install -r requirements.txt
 ```
+
+
+### Configure AWS CLI
+
+AWS CLI will be configured and accessed via Vagrant box, so first of all login to box 
+and activate Python virtual environment:
+
+```
+$ vagrant ssh
+$ source venv/bin/activate
+$ cd /vagrant
+```
+
+Check that AWS CLI is accessible (Vagrant should install it from `requirements.txt`):
+
+```
+$ aws --version
+aws-cli/1.11.93 Python/3.6.1 Linux/4.4.0-78-generic botocore/1.5.56
+```
+
+After you'll have to configure AWS CLI accrding to [manual](http://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html).
+
+```
+$ aws configure
+AWS Access Key ID [none]: <your AWS access key> 
+AWS Secret Access Key [none]: <your AWS secret access key>
+Default region name [none]: us-east-1
+Default output format [none]: json
+```
+
+Check that AWS is accessible via CLI:
+
+```
+$ aws ec2 describe-instances
+{
+    "Reservations": []
+}
+```
+
+All your AWS configuration is stored in `~/.aws/config` and `~/.aws/credentials` on Vagrant box.
