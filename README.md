@@ -1,5 +1,6 @@
 [![Build Status](https://travis-ci.org/mligus/cloudwatch-handlers.svg?branch=master)](https://travis-ci.org/mligus/cloudwatch-handlers)
-
+[![codecov](https://codecov.io/gh/mligus/cloudwatch-handlers/branch/master/graph/badge.svg)](https://codecov.io/gh/mligus/cloudwatch-handlers)
+,,
 
 # AWS CloudWatch logging handlers
 
