@@ -1,4 +1,5 @@
-https://travis-ci.org/mligus/cloudwatch-handlers.svg?branch=master
+[![Build Status](https://travis-ci.org/mligus/cloudwatch-handlers.svg?branch=master)](https://travis-ci.org/mligus/cloudwatch-handlers)
+
 
 # AWS CloudWatch logging handlers
 
