@@ -9,4 +9,8 @@ python:
 install: 
   - pip install -e .
   - pip install -r requirements.txt
-script: make test
+script: 
+  - make test
+
+after_success:
+  - codecov
