@@ -1,3 +1,5 @@
+https://travis-ci.org/mligus/cloudwatch-handlers.svg?branch=master
+
 # AWS CloudWatch logging handlers
 
 This library contains custom Python logging handlers for AWS CloudWatch services.
