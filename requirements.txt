@@ -3,7 +3,6 @@ boto3==1.4.4
 botocore==1.5.56
 certifi==2017.4.17
 chardet==3.0.3
--e git+git@github.com:mligus/cloudwatch-handlers.git@cd3afd10021e4a6ade96e221fdcdb536879d8c89#egg=cloudwath_handlers
 codecov==2.0.9
 colorama==0.3.7
 coverage==4.4.1
