@@ -1,2 +1,6 @@
 boto3
 awscli
+wheel
+flake8
+pytest
+pytest-cov
